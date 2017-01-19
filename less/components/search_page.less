@@ -1,0 +1,69 @@
+@import "../variables";
+
+/* Component
+   ========================================================================== */
+
+/**
+ * @name SearchPage
+ */
+.SearchPage {
+  color: @main-color;
+}
+
+/* descendant
+   ========================================================================== */
+/**
+ * @name searchContainer
+ * @component SearchPage
+*/
+.SearchPage-searchContainer {
+  display: flex;
+  padding: 10px;
+  margin: 0;
+}
+
+/**
+ * @name searchTexBox
+ * @component SearchPage
+*/
+.SearchPage-searchTextBox {
+  flex: 1 1 50%;
+  border-radius: 4px 0 0 4px !important;
+}
+
+/**
+ * @name searchButton
+ * @component SearchPage
+*/
+.SearchPage-searchButton {
+  border-radius: 0 4px 4px 0 !important;;
+}
+
+/**
+ * @name resultsContainer
+ * @component SearchPage
+*/
+.SearchPage-resultsContainer {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-top: 1px solid #a5a5a5;
+}
+
+/**
+ * @name results
+ * @component SearchPage
+*/
+.SearchPage-results {
+  display: flex;
+  flex-wrap: wrap;
+}
+/**
+ * @name noResults
+ * @component SearchPage
+*/
+.SearchPage-noResults {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 18px;
+}

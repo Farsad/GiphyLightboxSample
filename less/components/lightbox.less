@@ -1,0 +1,66 @@
+/* Component
+   ========================================================================== */
+
+/**
+ * @name Lightbox
+ */
+.Lightbox {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #1f1f1f;
+}
+
+/* descendant
+   ========================================================================== */
+
+/**
+ * @name preview
+ * @component Lightbox
+ */
+.Lightbox-preview {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.Lightbox-button {
+  position: absolute;
+  color: #bbb;
+  font-size: 30px;
+  font-family: sans-serif;
+  cursor: pointer;
+  &:hover{
+    color: #FFF;
+  }
+}
+
+/**
+ * @name previousButton
+ * @component Lightbox
+ */
+.Lightbox-previousButton {
+  top: 50%;
+  left: 20px;
+}
+
+/**
+ * @name nextButton
+ * @component Lightbox
+ */
+.Lightbox-nextButton {
+  top: 50%;
+  right: 20px;
+}
+
+/**
+ * @name closeButton
+ * @component Lightbox
+ */
+.Lightbox-closeButton {
+  top: 20px;
+  right: 20px;
+}
